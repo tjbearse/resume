@@ -73,7 +73,7 @@
 
 \newcommand{\header}[3]{%
   \begin{tikzpicture}[remember picture,overlay]
-    \node [rectangle, fill=fillheader, anchor=north, minimum width=\paperwidth, minimum height=4cm] (box) at (current page.north){};
+    \node [rectangle, fill=fillheader, anchor=north, minimum width=\paperwidth, minimum height=3.5cm] (box) at (current page.north){};
     \node [anchor=center] (name) at (box) {%
       \fontsize{40pt}{72pt}\color{green}%
       {\thinfont #1}{\bodyfont  #2}
@@ -83,7 +83,7 @@
       \thinfont #3%
     };
   \end{tikzpicture}
-  \vspace{2.5cm}
+  \vspace{2cm}
   \vspace{-2\parskip}
 }
 
@@ -144,7 +144,7 @@
     \textbf{#2}%
     \hfill%
     {\footnotesize\addfontfeature{Color=lightgray} #3}\\%
-    #4\vspace{\parsep}%
+    #4\vspace{0\parsep}%
   }\\}
 
 
@@ -160,7 +160,7 @@
   \renewcommand{\section}[1]{
     \par\vspace{\baselineskip}{\Large\headingfont\color{headercolor} ##1}
   }
-  \begin{textblock}{3.6}(1.5, 4.33)
+  \begin{textblock}{3.6}(1.5, 3.9)
   \begin{flushright}
   \obeycr
 }{%
